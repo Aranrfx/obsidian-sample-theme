@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Imperial+Script&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
 body {
 	--radius-s: 0px;
 	--radius-m: 0px;
@@ -8,9 +12,14 @@ body {
 	--toggle-radius: 0px;
 	--toggle-thumb-radius: 0px;
 	--slider-thumb-radius: 0px;
+	--font-text-theme: Alegreya;
+	--border-width
 }
 
-.workspace-tab-header.is-active::before, .workspace-tab-header.is-active::after {
+
+
+.workspace-tab-header.is-active::before,
+.workspace-tab-header.is-active::after {
 	display: none;
 }
 
@@ -31,4 +40,20 @@ svg * {
 
 .menu-separator {
 	margin: var(--size-2-1) calc(var(--size-2-1) * -1);
+}
+
+.theme-dark {
+	--background-primary: #360409;
+	--background-secondary: #0f2518;
+	--color-base-00: #1e1e1e;
+}
+
+.theme-light {
+	--background-primary: #ECE4FF;
+	--background-secondary: #D9C9FF;
+}
+
+.tree-item-self.mod-collapsible { /* side panel list items*/
+    border: 2px solid black;
+    padding: var(--nav-item-parent-padding);
 }
